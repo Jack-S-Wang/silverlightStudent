@@ -24,10 +24,9 @@ namespace SilverlightData.ViewXaml
         private void queryExamine_Loaded(object sender, RoutedEventArgs e)
         {
             StudentPendingSearch studentP = new StudentPendingSearch();
-            queryExamine.ResultType = typeof(StudentPending);
             queryExamine.QueryConditionEntity = studentP;
             queryExamine.PageSize = 20;
-            //queryExamine.EntityCheckedPropertyName = "IsCheck";
+            queryExamine.EntityCheckedPropertyName = "IsCheck";
             queryExamine.QueryOrderByProperties=new NCS.DataAccess.QueryOrderByProperty[] { new NCS.DataAccess.QueryOrderByProperty()
             { Checked = true,DisplayName="学号",Property="StudentId",Priority=1,Sort=NCS.DataAccess.QuerySortIn.Ascending } };
             //queryExamine.MulitSelect = false;
@@ -37,6 +36,7 @@ namespace SilverlightData.ViewXaml
             //     return b == "IsCheck";
             // };
             queryExamine.ResultDataGrid.CheckCellEditable = (b, d, bd) => false;
+            queryExamine.ResultType = typeof(StudentPending);
         }
 
         private void queryExamine_StartQuery(object sender, NCS.UI.Controls.QueryEventArgs e)

@@ -23,14 +23,14 @@ namespace SilverlightData.ViewXaml
         private void queryReject_Loaded(object sender, RoutedEventArgs e)
         {
             StudentPendingSearch studentP = new StudentPendingSearch();
-            queryReject.ResultType = typeof(StudentPending);
             queryReject.QueryConditionEntity = studentP;
             queryReject.PageSize = 20;
-            //queryReject.EntityCheckedPropertyName = "IsCheck";
+            queryReject.EntityCheckedPropertyName = "IsCheck";
             queryReject.QueryOrderByProperties = new NCS.DataAccess.QueryOrderByProperty[] { new NCS.DataAccess.QueryOrderByProperty()
             { Checked = true,DisplayName="学号",Property="StudentId",Priority=1,Sort=NCS.DataAccess.QuerySortIn.Ascending } };
             //queryReject.MulitSelect = false;
             queryReject.Header = $"RejectWindow     User:{Shar.user}";
+            queryReject.ResultType = typeof(StudentPending);
         }
 
         private void queryReject_StartQuery(object sender, NCS.UI.Controls.QueryEventArgs e)

@@ -27,15 +27,14 @@ namespace SilverlightData.ViewXaml
             studentSearch s = new studentSearch();
 
             queryFormal.PageSize = 20;
-
-            queryFormal.ResultType = typeof(Student);
-            //queryFormal.EntityCheckedPropertyName = "IsCheck";
+            queryFormal.EntityCheckedPropertyName = "IsCheck";
             //queryFormal.MulitSelect = false;
             queryFormal.QueryConditionEntity = s;
             queryFormal.QueryOrderByProperties = new NCS.DataAccess.QueryOrderByProperty[] { new NCS.DataAccess.QueryOrderByProperty()
             { Checked = true,DisplayName="学号",Property="StudentId",Priority=1,Sort=NCS.DataAccess.QuerySortIn.Ascending } };
 
             queryFormal.Header = $"EditWindow      User:{Shar.user}";
+            queryFormal.ResultType = typeof(Student);
 
         }
 

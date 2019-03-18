@@ -18,4 +18,3 @@ C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\Sil
 C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData.Web\bin\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData.Web\obj\Debug\SilverlightData.Web.dll
 C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData.Web\obj\Debug\SilverlightData.Web.pdb
-C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData.Web\obj\Debug\SilverlightData.Web.csprojResolveAssemblyReference.cache

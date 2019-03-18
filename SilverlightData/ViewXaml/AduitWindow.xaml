@@ -8,7 +8,7 @@
     d:DesignHeight="300" d:DesignWidth="400">
     
     <Grid x:Name="LayoutRoot" Background="White">
-        <ncs:QueryForm x:Name="queryExamine" Loaded="queryExamine_Loaded" StartQuery="queryExamine_StartQuery" queryReject.EntityCheckedPropertyName = "IsCheck">
+        <ncs:QueryForm x:Name="queryExamine" Loaded="queryExamine_Loaded" StartQuery="queryExamine_StartQuery">
             <ncs:QueryForm.CustomControlBottomPanel>
                 <Grid>
                     <Grid.ColumnDefinitions>

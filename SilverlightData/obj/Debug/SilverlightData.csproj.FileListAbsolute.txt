@@ -331,4 +331,3 @@ C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\Sil
 C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\obj\Debug\SilverlightData.dll
 C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\obj\Debug\SilverlightData.pdb
 C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\obj\Debug\XapCacheFile.xml
-C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\obj\Debug\SilverlightData.csprojResolveAssemblyReference.cache

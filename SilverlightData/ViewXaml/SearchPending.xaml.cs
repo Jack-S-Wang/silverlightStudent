@@ -27,7 +27,6 @@ namespace SilverlightData.ViewXaml
         {
             StudentPendingSearch sp = new StudentPendingSearch();
             querySerch.QueryConditionEntity = sp;
-            querySerch.ResultType = typeof(StudentPending);
             querySerch.PageSize = 20;
             querySerch.EntityCheckedPropertyName = "IsCheck";
             querySerch.QueryOrderByProperties = new NCS.DataAccess.QueryOrderByProperty[] { new NCS.DataAccess.QueryOrderByProperty()
@@ -36,6 +35,7 @@ namespace SilverlightData.ViewXaml
             querySerch.Header = $"PendingWindow     User:{Shar.user}";
             var datagrid = querySerch.ResultDataGrid as DataGridEx;
             datagrid.CheckCellEditable = (f, d, dg) => false;
+            querySerch.ResultType = typeof(StudentPending);
         }
 
         private void querySerch_StartQuery(object sender, NCS.UI.Controls.QueryEventArgs e)

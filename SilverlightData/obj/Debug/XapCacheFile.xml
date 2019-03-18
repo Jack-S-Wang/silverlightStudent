@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\Bin\Debug\SilverlightData.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2019/3/18/周一 10:50:47">
-  <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\obj\Debug\SilverlightData.dll" archivePath="SilverlightData.dll" lastWriteTime="2019/3/18/周一 10:50:45" />
+﻿<xapCache source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\Bin\Debug\SilverlightData.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2019/3/18/周一 14:34:10">
+  <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\obj\Debug\SilverlightData.dll" archivePath="SilverlightData.dll" lastWriteTime="2019/3/18/周一 14:34:08" />
   <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\packages\Unofficial.Silverlight.Toolkit.1.0.0\lib\sl50\Microsoft.Xna.Framework.Content.dll" archivePath="Microsoft.Xna.Framework.Content.dll" lastWriteTime="2019/3/9/周六 1:51:53" />
   <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\packages\Unofficial.Silverlight.Toolkit.1.0.0\lib\sl50\Microsoft.Xna.Framework.Toolkit.dll" archivePath="Microsoft.Xna.Framework.Toolkit.dll" lastWriteTime="2019/3/9/周六 1:51:53" />
   <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\ReferDll\SilverlightClient\NCS.SilverlightLib.dll" archivePath="NCS.SilverlightLib.dll" lastWriteTime="2019/3/9/周六 1:51:53" />
@@ -42,6 +42,6 @@
   <file source="C:\Program Files\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\zh-Hans\System.Xml.Serialization.resources.dll" archivePath="zh-Hans\System.Xml.Serialization.resources.dll" lastWriteTime="2011/11/18/周五 17:40:20" />
   <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\ReferDll\SilverlightClient\zh-hans\C1.Silverlight.5.resources.dll" archivePath="zh-hans\C1.Silverlight.5.resources.dll" lastWriteTime="2019/3/9/周六 1:51:53" />
   <file source="C:\Program Files\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\zh-Hans\System.Windows.Controls.Data.resources.dll" archivePath="zh-Hans\System.Windows.Controls.Data.resources.dll" lastWriteTime="2011/11/18/周五 17:40:20" />
-  <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="2019/3/14/周四 23:28:52" />
-  <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2019/3/17/周日 16:01:29" />
+  <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="2019/3/18/周一 14:23:15" />
+  <file source="C:\Users\Administrator\documents\visual studio 2015\Projects\SilverlightData\SilverlightData\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2019/3/18/周一 14:31:01" />
 </xapCache>
