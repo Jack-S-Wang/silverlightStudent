@@ -1,0 +1,27 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="SilverlightData.ViewXaml.JuageWindow"
+    xmlns:conl="clr-namespace:SilverlightData.ViewXaml"
+    mc:Ignorable="d"
+    d:DesignHeight="500" d:DesignWidth="500" Loaded="UserControl_Loaded">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+
+        <sdk:TabControl x:Name="tabControl"  Height="Auto" Width="Auto" Margin="2">
+            <sdk:TabItem Header="EditWindow">
+                <Grid Background="#FFE5E5E5">
+                    <conl:SearchFormal Margin="2" x:Name="formal"/>
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="AuditWindow">
+                <Grid Background="#FFE5E5E5">
+                    <conl:AduitWindow Height="Auto" Margin="2" />
+                </Grid>
+            </sdk:TabItem>
+        </sdk:TabControl>
+
+    </Grid>
+</UserControl>

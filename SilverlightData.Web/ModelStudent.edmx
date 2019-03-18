@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBModelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="CHECK_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CHECK_OPERATOR_TIME" Type="datetime" />
+          <Property Name="CREATE_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CREATE_TIME" Type="datetime" />
+          <Property Name="UPDATE_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPDATE_TIME" Type="datetime" />
+          <Property Name="StudentId" Type="int" Nullable="false" />
+          <Property Name="StudentName" Type="nvarchar" MaxLength="50" />
+          <Property Name="StudentAge" Type="int" />
+          <Property Name="StudentSex" Type="int" />
+          <Property Name="StudentClass" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="StudentHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="AUDIT_STATE" Type="int" />
+          <Property Name="CHECK_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CHECK_OPERATOR_TIME" Type="datetime" />
+          <Property Name="CREATE_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CREATE_TIME" Type="datetime" />
+          <Property Name="OPERATOR_TYPE" Type="int" />
+          <Property Name="UPDATE_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPDATE_TIME" Type="datetime" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="StudentName" Type="nvarchar" MaxLength="50" />
+          <Property Name="StudentAge" Type="int" />
+          <Property Name="StudentSex" Type="int" />
+          <Property Name="StudentClass" Type="nvarchar" MaxLength="50" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StudentPending">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="AUDIT_STATE" Type="int" />
+          <Property Name="CHECK_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CHECK_OPERATOR_TIME" Type="datetime" />
+          <Property Name="CREATE_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CREATE_TIME" Type="datetime" />
+          <Property Name="OPERATOR_TYPE" Type="int" />
+          <Property Name="UPDATE_OPERATOR_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPDATE_TIME" Type="datetime" />
+          <Property Name="StudentId" Type="int" Nullable="false" />
+          <Property Name="StudentName" Type="nvarchar" MaxLength="50" />
+          <Property Name="StudentAge" Type="int" />
+          <Property Name="StudentSex" Type="int" />
+          <Property Name="StudentClass" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="DBModelModelStoreContainer">
+          <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentHistory" EntityType="Self.StudentHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentPending" EntityType="Self.StudentPending" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBModelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DBModelEntities1" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Student" EntityType="DBModelModel.Student" />
+          <EntitySet Name="StudentHistory" EntityType="DBModelModel.StudentHistory" />
+          <EntitySet Name="StudentPending" EntityType="DBModelModel.StudentPending" />
+        </EntityContainer>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="CHECK_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CHECK_OPERATOR_TIME" Type="DateTime" Precision="3" />
+          <Property Name="CREATE_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CREATE_TIME" Type="DateTime" Precision="3" />
+          <Property Name="UPDATE_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATE_TIME" Type="DateTime" Precision="3" />
+          <Property Name="StudentId" Type="Int32" Nullable="false" />
+          <Property Name="StudentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StudentAge" Type="Int32" />
+          <Property Name="StudentSex" Type="Int32" />
+          <Property Name="StudentClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="StudentHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="AUDIT_STATE" Type="Int32" />
+          <Property Name="CHECK_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CHECK_OPERATOR_TIME" Type="DateTime" Precision="3" />
+          <Property Name="CREATE_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CREATE_TIME" Type="DateTime" Precision="3" />
+          <Property Name="OPERATOR_TYPE" Type="Int32" />
+          <Property Name="UPDATE_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATE_TIME" Type="DateTime" Precision="3" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="StudentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StudentAge" Type="Int32" />
+          <Property Name="StudentSex" Type="Int32" />
+          <Property Name="StudentClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="StudentPending">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="AUDIT_STATE" Type="Int32" />
+          <Property Name="CHECK_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CHECK_OPERATOR_TIME" Type="DateTime" Precision="3" />
+          <Property Name="CREATE_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CREATE_TIME" Type="DateTime" Precision="3" />
+          <Property Name="OPERATOR_TYPE" Type="Int32" />
+          <Property Name="UPDATE_OPERATOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATE_TIME" Type="DateTime" Precision="3" />
+          <Property Name="StudentId" Type="Int32" Nullable="false" />
+          <Property Name="StudentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StudentAge" Type="Int32" />
+          <Property Name="StudentSex" Type="Int32" />
+          <Property Name="StudentClass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBModelModelStoreContainer" CdmEntityContainer="DBModelEntities1" >
+          <EntitySetMapping Name="Student">
+            <EntityTypeMapping TypeName="DBModelModel.Student">
+              <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="StudentClass" ColumnName="StudentClass" />
+                <ScalarProperty Name="StudentSex" ColumnName="StudentSex" />
+                <ScalarProperty Name="StudentAge" ColumnName="StudentAge" />
+                <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="UPDATE_OPERATOR_ID" ColumnName="UPDATE_OPERATOR_ID" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="CREATE_OPERATOR_ID" ColumnName="CREATE_OPERATOR_ID" />
+                <ScalarProperty Name="CHECK_OPERATOR_TIME" ColumnName="CHECK_OPERATOR_TIME" />
+                <ScalarProperty Name="CHECK_OPERATOR_ID" ColumnName="CHECK_OPERATOR_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentHistory">
+            <EntityTypeMapping TypeName="DBModelModel.StudentHistory">
+              <MappingFragment StoreEntitySet="StudentHistory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StudentClass" ColumnName="StudentClass" />
+                <ScalarProperty Name="StudentSex" ColumnName="StudentSex" />
+                <ScalarProperty Name="StudentAge" ColumnName="StudentAge" />
+                <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="UPDATE_OPERATOR_ID" ColumnName="UPDATE_OPERATOR_ID" />
+                <ScalarProperty Name="OPERATOR_TYPE" ColumnName="OPERATOR_TYPE" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="CREATE_OPERATOR_ID" ColumnName="CREATE_OPERATOR_ID" />
+                <ScalarProperty Name="CHECK_OPERATOR_TIME" ColumnName="CHECK_OPERATOR_TIME" />
+                <ScalarProperty Name="CHECK_OPERATOR_ID" ColumnName="CHECK_OPERATOR_ID" />
+                <ScalarProperty Name="AUDIT_STATE" ColumnName="AUDIT_STATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentPending">
+            <EntityTypeMapping TypeName="DBModelModel.StudentPending">
+              <MappingFragment StoreEntitySet="StudentPending">
+                <ScalarProperty Name="StudentClass" ColumnName="StudentClass" />
+                <ScalarProperty Name="StudentSex" ColumnName="StudentSex" />
+                <ScalarProperty Name="StudentAge" ColumnName="StudentAge" />
+                <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+                <ScalarProperty Name="UPDATE_OPERATOR_ID" ColumnName="UPDATE_OPERATOR_ID" />
+                <ScalarProperty Name="OPERATOR_TYPE" ColumnName="OPERATOR_TYPE" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="CREATE_OPERATOR_ID" ColumnName="CREATE_OPERATOR_ID" />
+                <ScalarProperty Name="CHECK_OPERATOR_TIME" ColumnName="CHECK_OPERATOR_TIME" />
+                <ScalarProperty Name="CHECK_OPERATOR_ID" ColumnName="CHECK_OPERATOR_ID" />
+                <ScalarProperty Name="AUDIT_STATE" ColumnName="AUDIT_STATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBModelModelStoreContainer" CdmEntityContainer="DBModelEntities1">
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="DBModelModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="StudentClass" ColumnName="StudentClass" />
+          <ScalarProperty Name="StudentSex" ColumnName="StudentSex" />
+          <ScalarProperty Name="StudentAge" ColumnName="StudentAge" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+          <ScalarProperty Name="UPDATE_OPERATOR_ID" ColumnName="UPDATE_OPERATOR_ID" />
+          <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+          <ScalarProperty Name="CREATE_OPERATOR_ID" ColumnName="CREATE_OPERATOR_ID" />
+          <ScalarProperty Name="CHECK_OPERATOR_TIME" ColumnName="CHECK_OPERATOR_TIME" />
+          <ScalarProperty Name="CHECK_OPERATOR_ID" ColumnName="CHECK_OPERATOR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentHistory">
+      <EntityTypeMapping TypeName="DBModelModel.StudentHistory">
+        <MappingFragment StoreEntitySet="StudentHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StudentClass" ColumnName="StudentClass" />
+          <ScalarProperty Name="StudentSex" ColumnName="StudentSex" />
+          <ScalarProperty Name="StudentAge" ColumnName="StudentAge" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+          <ScalarProperty Name="UPDATE_OPERATOR_ID" ColumnName="UPDATE_OPERATOR_ID" />
+          <ScalarProperty Name="OPERATOR_TYPE" ColumnName="OPERATOR_TYPE" />
+          <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+          <ScalarProperty Name="CREATE_OPERATOR_ID" ColumnName="CREATE_OPERATOR_ID" />
+          <ScalarProperty Name="CHECK_OPERATOR_TIME" ColumnName="CHECK_OPERATOR_TIME" />
+          <ScalarProperty Name="CHECK_OPERATOR_ID" ColumnName="CHECK_OPERATOR_ID" />
+          <ScalarProperty Name="AUDIT_STATE" ColumnName="AUDIT_STATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentPending">
+      <EntityTypeMapping TypeName="DBModelModel.StudentPending">
+        <MappingFragment StoreEntitySet="StudentPending">
+          <ScalarProperty Name="StudentClass" ColumnName="StudentClass" />
+          <ScalarProperty Name="StudentSex" ColumnName="StudentSex" />
+          <ScalarProperty Name="StudentAge" ColumnName="StudentAge" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="UPDATE_TIME" ColumnName="UPDATE_TIME" />
+          <ScalarProperty Name="UPDATE_OPERATOR_ID" ColumnName="UPDATE_OPERATOR_ID" />
+          <ScalarProperty Name="OPERATOR_TYPE" ColumnName="OPERATOR_TYPE" />
+          <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+          <ScalarProperty Name="CREATE_OPERATOR_ID" ColumnName="CREATE_OPERATOR_ID" />
+          <ScalarProperty Name="CHECK_OPERATOR_TIME" ColumnName="CHECK_OPERATOR_TIME" />
+          <ScalarProperty Name="CHECK_OPERATOR_ID" ColumnName="CHECK_OPERATOR_ID" />
+          <ScalarProperty Name="AUDIT_STATE" ColumnName="AUDIT_STATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

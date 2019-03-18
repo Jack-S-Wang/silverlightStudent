@@ -1,0 +1,47 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SilverlightData" EntryPointType="SilverlightData.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SilverlightData" Source="SilverlightData.dll" />
+    <AssemblyPart x:Name="Microsoft.Xna.Framework.Content" Source="Microsoft.Xna.Framework.Content.dll" />
+    <AssemblyPart x:Name="Microsoft.Xna.Framework.Toolkit" Source="Microsoft.Xna.Framework.Toolkit.dll" />
+    <AssemblyPart x:Name="NCS.SilverlightLib" Source="NCS.SilverlightLib.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.DataForm.Toolkit" Source="System.Windows.Controls.Data.DataForm.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Toolkit" Source="System.Windows.Controls.Data.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.DataVisualization.Toolkit" Source="System.Windows.Controls.DataVisualization.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input" Source="System.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input.Toolkit" Source="System.Windows.Controls.Input.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Layout.Toolkit" Source="System.Windows.Controls.Layout.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Theming.Toolkit" Source="System.Windows.Controls.Theming.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit.Internals" Source="System.Windows.Controls.Toolkit.Internals.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart x:Name="Microsoft.Xna.Framework.Graphics.Extensions" Source="Microsoft.Xna.Framework.Graphics.Extensions.dll" />
+    <AssemblyPart x:Name="Microsoft.Xna.Framework.Math" Source="Microsoft.Xna.Framework.Math.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.Zip.5" Source="C1.Silverlight.Zip.5.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.Excel.5" Source="C1.Silverlight.Excel.5.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.DataGrid.5" Source="C1.Silverlight.DataGrid.5.dll" />
+    <AssemblyPart x:Name="Microsoft.Windows.Controls.WatermarkedTextBox" Source="Microsoft.Windows.Controls.WatermarkedTextBox.dll" />
+    <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.5" Source="C1.Silverlight.5.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="C1.Silverlight.DateTimeEditors.5" Source="C1.Silverlight.DateTimeEditors.5.dll" />
+    <AssemblyPart Source="zh-hans/NCS.SilverlightLib.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.ComponentModel.DataAnnotations.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Data.Input.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Input.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="zh-Hans/Microsoft.Xna.Framework.Graphics.Extensions.resources.dll" />
+    <AssemblyPart Source="zh-Hans/Microsoft.Xna.Framework.Math.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="zh-hans/C1.Silverlight.DataGrid.5.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="zh-hans/C1.Silverlight.5.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Data.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

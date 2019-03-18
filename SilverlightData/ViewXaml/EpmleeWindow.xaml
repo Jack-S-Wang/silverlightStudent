@@ -1,0 +1,30 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="SilverlightData.ViewXaml.EmpleeWindow"
+    xmlns:control="clr-namespace:SilverlightData.ViewXaml"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <sdk:TabControl x:Name="tabControl"  Height="Auto"  Width="Auto" Margin="2">
+            <sdk:TabItem Header="PendingWindow" x:Name="tabSearch">
+                <Grid Background="#FFE5E5E5">
+                    <control:SearchPending Margin="2"/>
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="EditPending" x:Name="tabEdit" Margin="2">
+                <Grid Background="#FFE5E5E5">
+                    <control:SearchFormal/>
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="RejectWindow" x:Name="tabReject" Margin="2">
+                <Grid Background="#FFE5E5E5">
+                    <control:RejectWindow/>
+                </Grid>
+            </sdk:TabItem>
+        </sdk:TabControl>
+    </Grid>
+</UserControl>

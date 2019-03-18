@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QuerySortIn" elementFormDefault="qualified" targetNamespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QuerySortIn" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="QuerySortIn">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Default" />
+      <xs:enumeration value="Ascending" />
+      <xs:enumeration value="Descending" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="QuerySortIn" nillable="true" type="tns:QuerySortIn" />
+</xs:schema>

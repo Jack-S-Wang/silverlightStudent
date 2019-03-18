@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryOrderByProperty" elementFormDefault="qualified" targetNamespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryOrderByProperty" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd10" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QuerySortIn" />
+  <xs:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfQueryOrderByProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="QueryOrderByProperty" nillable="true" type="tns:QueryOrderByProperty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQueryOrderByProperty" nillable="true" type="tns:ArrayOfQueryOrderByProperty" />
+  <xs:complexType name="QueryOrderByProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Priority" type="xs:int" />
+      <xs:element minOccurs="0" name="Property" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QuerySortIn" minOccurs="0" name="Sort" type="q1:QuerySortIn" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="QueryOrderByProperty" nillable="true" type="tns:QueryOrderByProperty" />
+</xs:schema>

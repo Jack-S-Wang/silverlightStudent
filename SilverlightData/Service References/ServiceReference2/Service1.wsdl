@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd2" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryConditions" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd3" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QuerySubConditions" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd4" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryCondition" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd5" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryConditionOperator" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd6" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryConditionExpression" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd7" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryConditionExpressionType" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd8" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.ConditionRelation" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd9" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QueryOrderByProperty" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd10" namespace="http://schemas.ncsi.com.cn/2012/12/NCS.DataAccess.QuerySortIn" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/SilverlightData.Web" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd12" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+      <xsd:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd13" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_Getstudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:Getstudent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Getstudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetstudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetStudentPendings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentPendings" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetStudentPendings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentPendingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRejectStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRejectStudent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRejectStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRejectStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addStudentPending_InputMessage">
+    <wsdl:part name="parameters" element="tns:addStudentPending" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addStudentPending_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addStudentPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateStudentPendidngs_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateStudentPendidngs" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateStudentPendidngs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateStudentPendidngsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_delStudentPending_InputMessage">
+    <wsdl:part name="parameters" element="tns:delStudentPending" />
+  </wsdl:message>
+  <wsdl:message name="IService1_delStudentPending_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delStudentPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Aduit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Aduit" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Aduit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AduitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UnAduit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnAduit" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UnAduit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnAduitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReState_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReState" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReStateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="Getstudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Getstudent" message="tns:IService1_Getstudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetstudentResponse" message="tns:IService1_Getstudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentPendings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetStudentPendings" message="tns:IService1_GetStudentPendings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetStudentPendingsResponse" message="tns:IService1_GetStudentPendings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRejectStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRejectStudent" message="tns:IService1_GetRejectStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRejectStudentResponse" message="tns:IService1_GetRejectStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addStudentPending">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addStudentPending" message="tns:IService1_addStudentPending_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addStudentPendingResponse" message="tns:IService1_addStudentPending_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateStudentPendidngs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateStudentPendidngs" message="tns:IService1_updateStudentPendidngs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateStudentPendidngsResponse" message="tns:IService1_updateStudentPendidngs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delStudentPending">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/delStudentPending" message="tns:IService1_delStudentPending_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/delStudentPendingResponse" message="tns:IService1_delStudentPending_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Aduit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Aduit" message="tns:IService1_Aduit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AduitResponse" message="tns:IService1_Aduit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnAduit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UnAduit" message="tns:IService1_UnAduit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UnAduitResponse" message="tns:IService1_UnAduit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReState" message="tns:IService1_ReState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReStateResponse" message="tns:IService1_ReState_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Getstudent">
+      <soap:operation soapAction="http://tempuri.org/IService1/Getstudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudentPendings">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetStudentPendings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRejectStudent">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRejectStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStudentPending">
+      <soap:operation soapAction="http://tempuri.org/IService1/addStudentPending" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateStudentPendidngs">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateStudentPendidngs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delStudentPending">
+      <soap:operation soapAction="http://tempuri.org/IService1/delStudentPending" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Aduit">
+      <soap:operation soapAction="http://tempuri.org/IService1/Aduit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnAduit">
+      <soap:operation soapAction="http://tempuri.org/IService1/UnAduit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReState">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:26675/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

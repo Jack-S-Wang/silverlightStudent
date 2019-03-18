@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SilverlightData.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SilverlightData.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:26675/Service1.svc?xsd=xsd12" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="ArrayOfStudent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Student" nillable="true" type="tns:Student" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudent" nillable="true" type="tns:ArrayOfStudent" />
+  <xs:complexType name="Student">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CHECK_OPERATOR_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CHECK_OPERATOR_TIME" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CREATE_OPERATOR_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATE_TIME" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StudentAge" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="StudentClass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudentId" type="xs:int" />
+          <xs:element minOccurs="0" name="StudentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudentSex" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UPDATE_OPERATOR_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATE_TIME" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Student" nillable="true" type="tns:Student" />
+  <xs:complexType name="ArrayOfStudentPending">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentPending" nillable="true" type="tns:StudentPending" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudentPending" nillable="true" type="tns:ArrayOfStudentPending" />
+  <xs:complexType name="StudentPending">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AUDIT_STATE" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CHECK_OPERATOR_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CHECK_OPERATOR_TIME" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CREATE_OPERATOR_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CREATE_TIME" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OPERATOR_TYPE" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="StudentAge" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="StudentClass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudentId" type="xs:int" />
+          <xs:element minOccurs="0" name="StudentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudentSex" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UPDATE_OPERATOR_ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UPDATE_TIME" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudentPending" nillable="true" type="tns:StudentPending" />
+</xs:schema>
